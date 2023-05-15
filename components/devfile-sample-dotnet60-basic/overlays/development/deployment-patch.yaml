@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dotnet60-basic
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/jduimovich0/devfile-sample-dotnet60-basic@sha256:3e5fa561dd7d915bd22acfe81245c19c4c6618f1b3f9b90d4df9c04232efc370
+        name: main
+        resources: {}
+status: {}
